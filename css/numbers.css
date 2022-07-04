@@ -1,0 +1,46 @@
+.numbers {
+	padding: 100px 0px 100px 0px;
+}
+
+.numbers .about__title {
+	margin: 0px 0px 35px 0px;
+}
+
+.main__item__page {}
+
+.page__row {
+	display: flex;
+	justify-content: space-between;
+}
+
+.page__counter {
+	margin: 0px 20px 0px 0px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 36px;
+	font-weight: 800;
+	color: #DB1F48;
+}
+
+.page__items {
+	display: flex;
+	align-items: center;
+}
+
+.page__text {
+	font-family: 'Open Sans', sans-serif;
+	letter-spacing: 1px;
+	font-size: 14px;
+	font-weight: 400;
+	opacity: 0.4;
+}
+
+.page__section {
+	transform: translate(0px, 120%);
+	opacity: 0;
+	transition: all 0.8s ease .0s;
+}
+
+.page__section._active {
+	transform: translate(0px, 0px);
+	opacity: 1;
+}

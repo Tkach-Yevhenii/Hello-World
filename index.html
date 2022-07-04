@@ -13,7 +13,16 @@
 	<link rel="shortcut icon" href="img/icons/earth.png" type="image/x-icon">
 
 	<!-- Fonts for WebSite -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,500;0,600;0,700;1,200;1,600&family=Nunito+Sans:wght@300;400;600;700;800&family=Open+Sans:wght@400;500;600;700;800&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+		rel="stylesheet">
 
+	<!-- font-family: 'Montserrat', sans-serif;
+font-family: 'Nunito Sans', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Raleway', sans-serif; -->
 
 	<title>Hello, World!</title>
 </head>
@@ -25,36 +34,40 @@
 			<div class="header__inner">
 
 				<div class="header__logo">
-					<img src="img/icons/cat.png" alt="Mine Logo">
-					<h1>Hello, World!</h1>
+					<img src="img/icons/earth.png" alt="">
+					<a href="#" data-scroll="#intro">
+						<h1>Hello, World!</h1>
+					</a>
 				</div>
 
 				<nav class="nav" id="nav">
 					<a href="#" class="nav__link" data-scroll="#about">About me</a>
-					<a href="#" class="nav__link" data-scroll="#team">Skills</a>
-					<a href="#" class="nav__link" data-scroll="#works">Services</a>
+					<a href="#" class="nav__link" data-scroll="#skills">Skills</a>
+					<a href="#" class="nav__link" data-scroll="#numbers">Statistics</a>
 					<a href="#" class="nav__link" data-scroll="#price">Testimonial</a>
-					<a href="#" class="nav__link" data-scroll="#order">Works</a>
-				</nav>
+					<a href="#" class="nav__link" data-scroll="#order">Contacts</a>
 
-				<div class="header__social">
-					<div class="header__soc__icons">
-						<a href="#" class="link__icons"><img src="img/icons/facebook-svgrepo-com (3).svg"
-								alt="Facebook"></a>
+					<div class="header__social">
+						<div class="header__soc__icons">
+							<a href="#" class="link__icons"><img src="img/icons/facebook-svgrepo-com (3).svg"
+									alt="Facebook"></a>
 
-						<a href="#" class="link__icons"><img src="img/icons/instagram-svgrepo-com (7).svg"
-								alt="Instagram"></a>
-						<a href="#" class="link__icons"><img src="img/icons/linkedin-svgrepo-com (4).svg"
-								alt="Linkedin"></a>
-						<a href="#" class="link__icons"><img src="img/icons/github-svgrepo-com (2).svg"
-								alt="GitHub"></a>
-						<a href="#" class="link__icons"><img src="img/icons/sketch-svgrepo-com.svg" alt="GitHub"></a>
+							<a href="#" class="link__icons"><img src="img/icons/instagram-svgrepo-com (7).svg"
+									alt="Instagram"></a>
+							<a href="#" class="link__icons"><img src="img/icons/linkedin-svgrepo-com (4).svg"
+									alt="Linkedin"></a>
+							<a href="#" class="link__icons"><img src="img/icons/github-svgrepo-com (2).svg"
+									alt="GitHub"></a>
+							<a href="#" class="link__icons"><img src="img/icons/sketch-svgrepo-com.svg"
+									alt="GitHub"></a>
+						</div>
 					</div>
-				</div>
 
-				<div class="button button__header">
-					<a href="#" class="btn">Do order</a>
-				</div>
+					<div class="page__action">
+						<button type="button" class="page__theme"></button>
+						<button type="button" class="page__reset"></button>
+					</div>
+				</nav>
 
 				<button class="burger" type="button">
 					<span class="burger__item" id="navToggle">Menu</span>
@@ -63,7 +76,339 @@
 			</div>
 		</div>
 	</header>
-	<!-- /Header -->
+	<!-- Header End-->
+
+
+	<!-- Intro -->
+	<section class="main__intro" id="intro">
+		<div class="main-block__image _ibg">
+			<!-- <img src="img/img/intro/back.jpg" alt="Background Image"> -->
+		</div>
+
+		<div class="circles"></div>
+		<div class="circlesTwo"></div>
+
+
+		<div class="container">
+			<div class="intro__content">
+				<div class="intro__text">
+					<div class="intro__title _anim-items _anim-no-hide">
+						<p><span>Hello!</span> I am Eugene Tkach</p>
+						<p class="last__par">Dat NET Developer</p>
+					</div>
+
+					<div class="other__Text__title _anim-items _anim-no-hide">
+						<div class="intro__subtitle ">
+							<p>Hello my name is Eugene and I am .net Developer! I can help you if you need your own
+								application or your website and desktop application! You can tell me abou your tasks and
+								I
+								will do it!</p>
+						</div>
+
+						<div class="intro__profiles">
+							<div class="profile__item">
+								<p>Dat NET Development</p>
+								<p>Development the desktop application</p>
+							</div>
+
+							<div class="profile__item">
+								<p>Unity Development</p>
+								<p>Development the computer games</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="intro__images _anim-items _anim-no-hide">
+					<img src="img/imagePhoto/photo.png" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Intro End-->
+
+
+	<!-- Artciles -->
+	<section class="page__services services _anim-items _anim-no-hide" >
+		<div class="services__container container">
+			<div class="services__body">
+
+				<div class="services__column">
+					<div class="services__item item-service">
+						<div class="item-service__icon">
+							<img class="img-svg" src="img/icons/gaming (1).png" alt="Finance and consultancy">
+							<div class="profile__item">
+								<p>Dat NET Development</p>
+								<p>Development the desktop application</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="services__column">
+					<div class="services__item item-service">
+						<div class="item-service__icon">
+							<img class="img-svg" src="img/icons/joystick (2).png" alt="Finance and consultancy">
+							<div class="profile__item">
+								<p>Unity Development</p>
+								<p>Development the computer games</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="services__column">
+					<div class="services__item item-service">
+						<div class="item-service__icon">
+							<img class="img-svg" src="img/icons/mobile-app.png" alt="Finance and consultancy">
+							<div class="profile__item">
+								<p>Dat NET Development</p>
+								<p>Development the mobile application</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+	</section>
+	<!-- Artciles End -->
+
+	<!-- About -->
+	<section class="about" id="about">
+		<div class="container">
+			<div class="about__body">
+				<div class="about__column">
+					<div class="about__item  about__images _anim-items _anim-no-hide">
+						<img src="img/imagePhoto/photoThree.png" alt="" class="about__img">
+					</div>
+				</div>
+
+
+				<div class="about__column">
+					<div class="about__item item__text-about">
+						<div class="about__title _anim-items _anim-no-hide">
+							<p>Hello! This history about me! <br>I want to tell about my experience</p>
+						</div>
+						<div class="about__subtitle _anim-items _anim-no-hide">
+							<p class="_anim-show">Hello my name is Eugene and I am .net Developer! I can help you if you
+								need your own
+								application or your website and desktop application! You can tell me abou your tasks and
+								I
+								will do it!</p>
+
+							<p class="_anim-show">And after all my courses I had experience about different games like
+								chess and space-X.
+								Thus I have experience with desktop and mobile application.</p>
+						</div>
+
+						<div class="aboutUs__cards">
+
+							<div class="aboutUs__rectangles _anim-items _anim-no-hide">
+								<div class="ractangle front">
+									<div class="rectangle__image">
+										<img src="img/icons/chess.png" alt="">
+										<div class="profile__item">
+											<p>Dat NET Development</p>
+											<p>Development the desktop application</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="ractangle back">
+									<div class="reactangle__body">
+										<div class="btn btn-three">
+											<span>Learn more!</span>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+
+							<div class="aboutUs__rectangles _anim-items _anim-no-hide">
+								<div class="ractangle front">
+									<div class="rectangle__image">
+										<img src="img/icons/spaceship.png" alt="">
+										<div class="profile__item">
+											<p>Unity Development</p>
+											<p>Development the game Space-X</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="ractangle back">
+									<div class="reactangle__body">
+										<div class="btn btn-three">
+											<span>Learn more!</span>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- About End-->
+
+	<!-- Skills -->
+	<section class="skills" id="skills">
+		<div class="container">
+			<div class="about__body">
+				<div class="about__column">
+					<div class="about__item item__text-about">
+						<div class="about__title _anim-items _anim-no-hide">
+							<p>Professional Skills <br> More information about my skill you can <br> find in my resume
+							</p>
+						</div>
+
+						<div class="header__content__skills _anim-items _anim-no-hide">
+							<p class="name__lang__main">
+								Hard Skills</p>
+							<div class="skills-bar">
+								<div class="bar">
+									<div class="info">
+										<span>ASP.NET</span>
+									</div>
+									<div class="progress-line apsnet"><span></span></div>
+								</div>
+
+								<div class="bar">
+									<div class="info">
+										<span>C#</span>
+									</div>
+									<div class="progress-line csharp"><span></span></div>
+								</div>
+
+								<div class="bar">
+									<div class="info">
+										<span>JavaScript</span>
+									</div>
+									<div class="progress-line javascript"><span></span></div>
+								</div>
+
+								<div class="bar">
+									<div class="info">
+										<span>CSS</span>
+									</div>
+									<div class="progress-line css"><span></span></div>
+								</div>
+
+								<div class="bar">
+									<div class="info">
+										<span>HTML</span>
+									</div>
+									<div class="progress-line html"><span></span></div>
+								</div>
+
+							</div>
+						</div>
+
+						<div class="header__lang _anim-items _anim-no-hide">
+							<p class="name__lang__main">
+								Foreign languages</p>
+
+							<div class="header__speed__bar">
+								<div class="header__content__languages">
+									<div class="circular__progress">
+										<div class="value__container">
+											0%
+										</div>
+									</div>
+									<div class="name__lang__blcok">
+										<p class="name__lang">English</p>
+									</div>
+								</div>
+
+								<div class="header__content__languages">
+									<div class="circular__progress circular__progressTwo">
+										<div class="value__container value__containerTwo">
+											0%
+										</div>
+									</div>
+									<p class="name__lang">Ukrainian</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="about__column">
+					<div class="about__item  about__images _anim-items _anim-no-hide">
+						<img src="img/imagePhoto/photoFour.png" alt="" class="about__img">
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<!-- Skills End -->
+
+	<!-- Nummbers -->
+	<article class="numbers" id="numbers">
+		<div class="container">
+			<section class="main__item__page">
+				<div class="about__title _anim-items _anim-no-hide">
+					<p>Also you can see my <br> professional statistics</p>
+				</div>
+				<div class="page__section _anim-items _anim-no-hide">
+					<div class="page__container">
+						<div class="page__row">
+							<div class="page__items">
+								<div data-digits-counter class="page__counter">2</div>
+								<div class="page__text">
+									<p>Years of practice</p>
+								</div>
+							</div>
+
+							<div class="page__items">
+								<div data-digits-counter class="page__counter">25</div>
+								<div class="page__text">
+									<p>Completed projects</p>
+								</div>
+							</div>
+
+							<div class="page__items">
+								<div data-digits-counter class="page__counter">50</div>
+								<div class="page__text">
+									<p>Satisfied clients</p>
+								</div>
+							</div>
+
+							<div class="page__items">
+								<div data-digits-counter class="page__counter">10</div>
+								<div class="page__text">
+									<p>
+										Certificates and courses</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</article>
+	<!-- Numbers End -->
+
+	<!-- Testimonials -->
+	<section class="testimonials"></section>
+	<!-- Testimonials End-->
+
+	<!-- JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="js/header.js"></script>
+	<script src="js/darkMode.js"></script>
+	<script src="js/scroll.js"></script>
+	<script src="js/circle.js"></script>
+	<script src="js/numbers.js"></script>
+	<!-- /JavaScript -->
 </body>
 
 </html>

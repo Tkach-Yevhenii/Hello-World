@@ -1,0 +1,219 @@
+.skills {
+	padding: 100px 0px 100px 0px;
+}
+
+.skills .about__body {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header__lang {
+	padding: 0px 0px 0px 0px;
+}
+
+.header__lang p {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 500;
+	letter-spacing: 1px;
+	font-size: 14px;
+}
+
+.name__lang__main {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 500;
+	letter-spacing: 1px;
+	font-size: 14px;
+}
+
+.name__lang__main {
+	margin: 0px 0px 20px 0px;
+	padding: 20px 0px 0px 0px;
+}
+
+.header__content__languages .name__lang {
+	font-family: 'Raleway', sans-serif;
+	font-size: 12px;
+}
+
+.value__container {
+	font-family: 'Work Sans', sans-serif;
+	letter-spacing: 1px;
+	font-weight: 500;
+	font-size: 12px;
+	color: #050A30;
+	position: relative;
+}
+
+.header__speed__bar {
+	display: flex;
+}
+
+.header__content__languages {
+	width: 80px;
+	height: 80px;
+	background-color: transparent;
+	position: relative;
+	display: grid;
+	place-items: center;
+}
+
+.circular__progress {
+	position: relative;
+	width: 60px;
+	height: 60px;
+	background: #DB1F48;
+	border-radius: 50%;
+	display: grid;
+	place-items: center;
+	margin: 0px 0px 20px 0px;
+}
+
+.circular__progress::before {
+	content: "";
+	position: absolute;
+	height: 80%;
+	width: 80%;
+	background-color: #fefefe;
+	border-radius: 50%;
+}
+
+.name__skills {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 500;
+	color: #fff;
+	letter-spacing: 1px;
+	font-size: 12px;
+}
+
+.skills-bar .bar {
+	margin: 5px 0px 0px 0px;
+}
+
+.skills-bar .bar .info span {
+	font-size: 12px;
+	font-weight: 600;
+	font-family: 'Raleway', sans-serif;
+	letter-spacing: 1px;
+}
+
+.skills-bar .bar .progress-line {
+	position: relative;
+	z-index: 15;
+	height: 4px;
+	width: 60%;
+	background-color: #4a0f1c;
+	margin: 10px 0px 0px 0px;
+	transform: scaleX(0);
+	transform-origin: left;
+	animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+.progress-line span {
+	position: absolute;
+	height: 100%;
+	width: 80%;
+	background: #DB1F48;
+	border-radius: 10px;
+	transform: scaleX(0);
+	transform-origin: left;
+	animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+.bar .progress-line span::after {
+	position: absolute;
+	content: "80%";
+	right: 0;
+	top: -10px;
+	background: #3d4851;
+	color: #fff;
+	font-family: 'Raleway', sans-serif;
+	font-size: 12px;
+	padding: 1px 8px 1px 8px;
+	border-radius: 3px;
+	opacity: 0;
+	animation: showText 0.5s 1.5s linear forwards;
+}
+
+.progress-line.html span::after {
+	content: "90%";
+}
+
+.progress-line.css span::after {
+	content: "70%";
+}
+
+.progress-line.javascript span::after {
+	content: "40%";
+}
+
+.progress-line.csharp span::after {
+	content: "50%";
+}
+
+.progress-line.apsnet span::after {
+	content: "10%";
+}
+
+
+
+.progress-line.html span {
+	width: 90%;
+}
+
+.progress-line.css span {
+	width: 70%;
+}
+
+.progress-line.javascript span {
+	width: 40%;
+}
+
+.progress-line.csharp span {
+	width: 50%;
+}
+
+.progress-line.apsnet span {
+	width: 30%;
+}
+
+
+
+
+@keyframes animate {
+	100% {
+		transform: scale(1);
+	}
+}
+
+@keyframes showText {
+	100% {
+		opacity: 1;
+	}
+}
+
+.header__content__skills {
+	transform: translate(0px, 120%);
+	opacity: 0;
+	transition: all 0.4s ease .0s;
+}
+
+.header__content__skills._active {
+	transform: translate(0px, 0px);
+	opacity: 1;
+}
+
+.header__lang {
+	transform: translate(0px, 120%);
+	opacity: 0;
+	transition: all 0.4s ease .0s;
+}
+
+.header__lang._active {
+	transform: translate(0px, 0px);
+	opacity: 1;
+}
+
+.skills .about__column img {
+	top: 0;
+}
