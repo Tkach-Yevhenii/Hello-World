@@ -3,6 +3,11 @@
 }
 
 .numbers .about__title {
+	width: 100%;
+	text-align: right;
+}
+
+.numbers .about__title {
 	margin: 0px 0px 35px 0px;
 }
 
@@ -18,7 +23,7 @@
 	font-family: 'Open Sans', sans-serif;
 	font-size: 36px;
 	font-weight: 800;
-	color: #DB1F48;
+	color: #167D7F;
 }
 
 .page__items {
@@ -43,4 +48,20 @@
 .page__section._active {
 	transform: translate(0px, 0px);
 	opacity: 1;
+}
+
+@media (max-width:680px) {
+	.page__row {
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	.page__items {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		margin: 0px 0px 35px 0px;
+	}
 }

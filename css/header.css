@@ -1,6 +1,10 @@
 /*HEADER
 =========================*/
 
+.wrapper {
+	overflow: hidden;
+}
+
 button {
 	background-color: inherit;
 	font-weight: inherit;
@@ -145,14 +149,15 @@ button {
 .burger__item {
 	display: block;
 	width: 30px;
-	height: 3px;
-
-	background-color: #fff;
+	height: 30px;
+	border-radius: 50%;
+	background-color: #050A30;
 
 	font-size: 0;
 	color: transparent;
 	position: relative;
 }
+
 
 @media(max-width: 991px) {
 

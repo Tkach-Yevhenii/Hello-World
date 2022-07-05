@@ -28,7 +28,6 @@
 	;
 }
 
-
 ._ibg img {
 	position: absolute;
 	width: 100%;
@@ -58,7 +57,7 @@
 
 .intro__title p:last-child {
 	font-weight: 800;
-	color: #DB1F48;
+	color: #167D7F;
 }
 
 .intro__title span {
@@ -141,8 +140,9 @@
 }
 
 .services__column:hover .services__item {
-	background: rgb(250, 209, 38);
-	background: linear-gradient(171deg, rgba(250, 209, 38, 0.8018557764902836) 0%, rgba(255, 84, 79, 0.7206232834930848) 100%);
+
+	background: rgb(22, 125, 127);
+	background: linear-gradient(13deg, rgba(22, 125, 127, 1) 0%, rgba(152, 215, 194, 1) 61%);
 	transform: translateY(-10px);
 }
 
@@ -276,6 +276,18 @@
 	.intro__content {
 		justify-content: center;
 		text-align: center;
+	}
+}
+
+@media (max-width:700px) {
+	.intro__title {
+		font-size: 18px;
+	}
+
+	.intro__subtitle {
+		font-size: 10px;
+		padding: 0px 180px 0px 180px;
+		margin: 35px auto;
 	}
 }
 

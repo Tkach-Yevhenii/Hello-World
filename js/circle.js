@@ -12,8 +12,8 @@ let progress = setInterval(() => {
 
 	valueContainer.textContent = `${progressValue}%`;
 	progressBar.style.background = `conic-gradient(
-		#DB1F48 ${progressValue * 3.6}deg,
-		#4a0f1c ${progressValue * 3.6}deg
+		#167D7F ${progressValue * 3.6}deg,
+		#98D7C2 ${progressValue * 3.6}deg
 	)`;
 	if (progressValue == progressEndValue) {
 		clearInterval(progress)
@@ -36,8 +36,8 @@ let progressTwo = setInterval(() => {
 
 	valueContainerTwo.textContent = `${progressValueTwo}%`;
 	progressBarTwo.style.background = `conic-gradient(
-		#DB1F48 ${progressValueTwo * 3.6}deg,
-		#4a0f1c ${progressValueTwo * 3.6}deg
+		#167D7F ${progressValueTwo * 3.6}deg,
+		#98D7C2 ${progressValueTwo * 3.6}deg
 	)`;
 
 	if (progressValueTwo == progressEndValueTwo) {

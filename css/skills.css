@@ -1,5 +1,6 @@
 .skills {
 	padding: 100px 0px 100px 0px;
+	position: relative;
 }
 
 .skills .about__body {
@@ -62,7 +63,7 @@
 	position: relative;
 	width: 60px;
 	height: 60px;
-	background: #DB1F48;
+	background: #167D7F;
 	border-radius: 50%;
 	display: grid;
 	place-items: center;
@@ -113,7 +114,7 @@
 	position: absolute;
 	height: 100%;
 	width: 80%;
-	background: #DB1F48;
+	background: #167D7F;
 	border-radius: 10px;
 	transform: scaleX(0);
 	transform-origin: left;
@@ -216,4 +217,24 @@
 
 .skills .about__column img {
 	top: 0;
+}
+
+@media (max-width:1000px) {
+	.skills .about__body {
+		flex-direction: column;
+	}
+
+	.about__images {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+
+	.skills-bar {
+		padding: 0px 100px 0px 100px;
+	}
+
+	.header__speed__bar {
+		justify-content: center;
+	}
 }

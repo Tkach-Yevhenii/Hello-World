@@ -1,0 +1,167 @@
+.testimonials {
+	padding: 100px 0px 100px 0px;
+	position: relative;
+}
+
+.testimonials .about__title {
+	margin: 0px 0px 35px 0px;
+}
+
+/* Слайдер */
+.slick-slider {
+	min-width: 0;
+}
+
+/* Ограничивающая оболочка */
+.slick-list {
+	overflow: hidden;
+}
+
+/* Лента слайдов */
+.slick-track {
+	display: flex;
+	align-items: flex-start;
+}
+
+.slider {
+	position: relative;
+	padding: 0px 60px;
+}
+
+@media (max-width:767px) {
+	.slider {
+		padding: 0px 40px;
+	}
+}
+
+.slider .slick-arrow {
+	position: absolute;
+	top: 50%;
+	margin: -30px 0px 0px 0px;
+	z-index: 10;
+	font-size: 0;
+	width: 30px;
+	height: 40px;
+	padding: 10px 20px 10px 20px;
+	border-radius: 50%;
+	border: none;
+	cursor: pointer;
+	transition: all ease .4s 0s;
+}
+
+.slider .slick-arrow:hover {
+	transform: translateY(-8px);
+}
+
+.slider .slick-arrow.slick-prev:hover {
+	background-color: #DB1F48;
+}
+
+.slider .slick-arrow.slick-next:hover {
+	background-color: #DB1F48;
+}
+
+.slider .slick-arrow.slick-prev {
+	left: 0;
+	background: url('../img/sl-arrow_l.svg') no-repeat center;
+	background-size: 20%;
+	background-color: #050A30;
+}
+
+.slider .slick-arrow.slick-next {
+	right: 0;
+	background: url('../img/sl-arrow_r.svg') no-repeat center;
+	background-size: 20%;
+	background-color: #050A30;
+}
+
+.slider .slick-arrow.slick-disabled {
+	opacity: 0.2;
+}
+
+.slider .slick-dots {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 20px 0px 0px 0px;
+}
+
+.slider .slick-dots li {
+	list-style: none;
+	margin: 0px 10px;
+}
+
+.slider .slick-dots button {
+	font-size: 0;
+	width: 15px;
+	height: 15px;
+	background-color: #050A30;
+	border-radius: 50%;
+	border: none;
+	transition: all ease .4s 0s;
+	cursor: pointer;
+}
+
+.slider .slick-dots button:hover {
+	background-color: #DB1F48;
+	transform: translateY(-5px);
+}
+
+.slider .slick-dots li.slick-active button {
+	background-color: #050a305e;
+}
+
+.slider__item {
+	padding: 0px 15px;
+}
+
+.slider__item img {
+	max-width: 100%;
+}
+
+.slider__item.slick-center {}
+
+.slide__commit {
+	color: #050A30;
+}
+
+.slide__img img {
+	height: 50px;
+}
+
+.slide__title {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	font-weight: 600;
+	letter-spacing: .85px;
+	line-height: 160%;
+	margin: 0px 0px 25px 0px;
+}
+
+.slide__text {
+	font-family: 'Raleway', sans-serif;
+	font-size: 12px;
+	letter-spacing: 1px;
+	line-height: 180%;
+	opacity: 0.8;
+	margin: 0px 0px 25px 0px;
+}
+
+.slider__item {
+	overflow: hidden;
+	padding: 15px 20px;
+	background-color: rgba(17, 34, 34, 0.067);
+	box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.1);
+	margin: 0px 8.5px 0px 8.5px;
+}
+
+.slider {
+	transform: translate(0px, 120%);
+	opacity: 0;
+	transition: all 0.8s ease 0s;
+}
+
+.slider._active {
+	transform: translate(0px, 0px);
+	opacity: 1;
+}
