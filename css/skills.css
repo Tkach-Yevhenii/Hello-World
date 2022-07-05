@@ -42,7 +42,6 @@
 	letter-spacing: 1px;
 	font-weight: 500;
 	font-size: 12px;
-	color: #050A30;
 	position: relative;
 }
 
@@ -79,6 +78,10 @@
 	border-radius: 50%;
 }
 
+html.dark .circular__progress::before {
+	background-color: #050A30;
+}
+
 .name__skills {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 500;
@@ -108,6 +111,10 @@
 	transform: scaleX(0);
 	transform-origin: left;
 	animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+html.dark .skills-bar .bar .progress-line {
+	background-color: #fefefe;
 }
 
 .progress-line span {

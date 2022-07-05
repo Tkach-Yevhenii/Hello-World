@@ -54,11 +54,11 @@
 }
 
 .slider .slick-arrow.slick-prev:hover {
-	background-color: #DB1F48;
+	background-color: #167D7F;
 }
 
 .slider .slick-arrow.slick-next:hover {
-	background-color: #DB1F48;
+	background-color: #167D7F;
 }
 
 .slider .slick-arrow.slick-prev {
@@ -103,7 +103,7 @@
 }
 
 .slider .slick-dots button:hover {
-	background-color: #DB1F48;
+	background-color: #167D7F;
 	transform: translateY(-5px);
 }
 
@@ -165,3 +165,13 @@
 	transform: translate(0px, 0px);
 	opacity: 1;
 }
+
+
+html.dark .slide__commit {
+	color: #fefefe;
+}
+
+html.dark .slider__item {
+	background-color: rgba(157, 219, 219, 0.658);
+}
+

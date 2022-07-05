@@ -85,3 +85,13 @@
 		flex-direction: column;
 	}
 }
+
+html.dark .footer {
+	background-color: #fefefe;
+	color: #050A30;
+}
+
+html.dark .footer .foot__cont img {
+	filter: brightness(0.4);
+
+}

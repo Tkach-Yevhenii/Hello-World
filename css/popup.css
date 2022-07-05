@@ -1,3 +1,7 @@
+body.lock {
+	overflow: hidden;
+}
+
 .popup {
 	position: fixed;
 	z-index: 50;
@@ -43,7 +47,7 @@
 .popup__content {
 	background-color: #fefefe;
 	color: #050A30;
-	max-width: 800px;
+	width: 800px;
 	padding: 30px;
 	position: relative;
 	transition: all 0.8s ease 0s;
@@ -55,15 +59,11 @@
 	padding: 0;
 }
 
-.popup__image img {
-	max-width: 100%;
-	vertical-align: top;
-}
 
 .popup__close {
 	position: absolute;
-	right: 20px;
-	top: 20px;
+	right: 30px;
+	top: 40px;
 	font-size: 30px;
 	color: #050A30;
 	text-decoration: none;
@@ -77,12 +77,106 @@
 
 .popup__title {
 	font-family: 'Montserrat', sans-serif;
-	font-size: 40px;
-	margin: 0px 0px 1em 0px;
+	font-size: 36px;
+	letter-spacing: 1px;
+	margin: 0px 0px 20px 0px;
 }
 
-.popup__text {}
+.popup__subtitle {
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	letter-spacing: 1px;
+	line-height: 160%;
+	margin: 0px 0px 35px 0px;
+	width: 550px;
+}
 
-body.lock {
+.popup__subtitle body.lock {
 	overflow: hidden;
+}
+
+.first__form {
+	display: flex;
+	flex-direction: column;
+	margin: 0px 0px 30px 0px;
+}
+
+.first__formTwo {
+	flex-direction: row;
+}
+
+.first__formTwo .input {
+	padding: 0px 20px 0px 0px;
+}
+
+.first__formTwo .input:last-child {
+	padding: 0px 0px 0px 0px;
+}
+
+.first__form>:not(:last-child) {
+	margin: 0px 0px 30px 0px;
+}
+
+.input input {
+	width: 100%;
+	padding: 20px 25px 20px 100px;
+	background-color: #98D7C2;
+	border: none;
+
+	font-family: 'Raleway', sans-serif;
+	font-size: 12px;
+	letter-spacing: 1px;
+}
+
+.input input::placeholder {
+	font-family: 'Raleway', sans-serif;
+	font-size: 12px;
+	opacity: 0.8;
+	letter-spacing: 1px;
+}
+
+.inputOne {}
+
+.input {
+	position: relative;
+}
+
+.icon__input {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #fefefe;
+	height: 100%;
+	width: 70px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	border: .35px solid #050a3053;
+}
+
+.icon__input img {
+	height: 55px;
+}
+
+.first__formTwo {
+	display: flex;
+	margin: 0px 0px 30px 0px;
+}
+
+.subInput {
+	padding: 20px 72.5px;
+	background-color: #98D7C2;
+	color: #fefefe;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	font-weight: 600;
+	border: none;
+	letter-spacing: 1px;
+	cursor: pointer;
+	transition: all ease .4s 0s;
+}
+
+.subInput:hover {
+	background-color: #167D7F;
 }
